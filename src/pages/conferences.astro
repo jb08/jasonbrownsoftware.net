@@ -1,0 +1,75 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title="Conferences" description="Conference talks and presentations" />
+	</head>
+	<body>
+		<Header />
+		<main>
+		<h1>Conferences</h1>
+		<ul>
+			<li class="upcoming">
+				Rails World, Sept 23-24, 2026 in Austin, TX <a
+					href="https://rubyonrails.org/world/"
+					target="_blank">(official site)</a
+				>
+			</li>
+			<li class="upcoming">
+				Temporal Replay, May 5-7, 2026 in San Francisco <a
+					href="https://replay.temporal.io/"
+					target="_blank">(official site)</a
+				>
+			</li>
+			<li>
+				Rocky Mountain Ruby, Oct 6-7, 2025 in Boulder <a
+					href="https://www.youtube.com/watch?v=tn-xv7XssbM&t=2397s"
+					target="_blank">(lightening talk)</a
+				>
+			</li>
+				<li>
+					ExploreDDD, April 16-17, 2025 in Denver <a
+						href="https://medium.com/@jasonkingsley.brown/exploreddd-2025-3f686bfc7e60"
+						target="_blank">(blog post)</a
+					>
+				</li>
+				<li>
+					Rails World, Sept 26-27, 2024 in Toronto, Canada <a
+						href="https://medium.com/@jasonkingsley.brown/rails-world-toronto-hello-world-to-ipo-bac0c18cd0cf"
+						target="_blank">(blog post)</a
+					>
+				</li>
+				<li>
+					ExploreDDD, March 14-15, 2024 in Denver <a
+						href="https://medium.com/@jasonkingsley.brown/lessons-from-exploreddd-2024-da58d5040174"
+						target="_blank">(blog post)</a
+					>
+				</li>
+				<li>
+					RubyConf, Nov 15-16, 2023 in San Diego but attended virtually <a
+						href="https://medium.com/@jasonkingsley.brown/rubyconf-2023-b2a9b30bc85e"
+						target="_blank">(blog post)</a
+					>
+				</li>
+				<li>
+					RubyConf, Nov 9-10, 2021 in Denver <a
+						href="https://medium.com/@jasonkingsley.brown/rubyconf-2021-recap-1ee660c8c42d"
+						target="_blank">(blog post)</a
+					>
+				</li>
+			</ul>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.upcoming {
+		color: #059669;
+	}
+</style>
