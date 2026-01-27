@@ -13,26 +13,6 @@ import Header from '../components/Header.astro';
 		<Header />
 		<main>
 			<h1>Demos</h1>
-			<p>
-				<em>Note: I use a paid Zight subscription to record work demos at end-of-sprints. However they cannot be shared here. Here a few public demos.</em>
-			</p>
-
-			<h2>becktonredangussaledata.com</h2>
-			
-			<p>
-				This online catalog was a ranch cattle sale in November 2025. It was a Ruby on Rails App, hosted on Render, dns from Cloudflare, and observability from Honeycomb.io. The demo was recorded prior to the catalog being taken down post-auction.
-			</p>
-			
-			<div class="video-container">
-				<video 
-					controls
-					preload="metadata"
-				>
-					<source src="/assets/beckton_bulls.mp4" type="video/mp4" />
-					Your browser does not support the video tag.
-				</video>
-			</div>
-
 			<h2>Rocky Mountain Ruby</h2>
 			
 			<p>
@@ -47,11 +27,33 @@ import Header from '../components/Header.astro';
 					title="Rocky Mountain Ruby 2025" 
 					frameborder="0" 
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-					allowfullscreen
-				></iframe>
+				allowfullscreen
+			></iframe>
+		</div>
+
+			<h2>Cattle catalog</h2>
+			
+			<p>
+				This <a href="https://becktonredangussaledata.com" target="_blank">online catalog</a> was a ranch cattle sale in November 2025. It was a Ruby on Rails App, hosted on Render, dns from Cloudflare, and observability from Honeycomb.io. The demo was recorded prior to the catalog being taken down post-auction.
+			</p>
+			
+			<div class="video-container">
+				<video 
+					controls
+					preload="metadata"
+				>
+					<source src="/assets/beckton_bulls.mp4" type="video/mp4" />
+					Your browser does not support the video tag.
+				</video>
 			</div>
-		</main>
-		<Footer />
+
+			
+		
+		<p class="note">
+			Note: I use a paid Zight subscription to record work demos at end-of-sprints. However they cannot be shared here. Here a few public demos.
+		</p>
+	</main>
+	<Footer />
 	</body>
 </html>
 
@@ -77,5 +79,13 @@ import Header from '../components/Header.astro';
 	
 	h2 {
 		margin-top: 0;
+	}
+	
+	.note {
+		font-size: 0.875rem;
+		color: #888;
+		font-style: italic;
+		margin-top: 2rem;
+		margin-bottom: 1rem;
 	}
 </style>
