@@ -1,0 +1,138 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead
+			title="Pictures"
+			description="Personal and professional photos"
+		/>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Pictures</h1>
+
+			<div class="gallery">
+				<div class="gallery-item">
+					<img
+						src="/assets/pictures/2025_10_rocky_mountain_ruby.jpg"
+						alt="Rocky Mountain Ruby 2025"
+					/>
+					<p class="caption">Rocky Mountain Ruby 2025</p>
+				</div>
+
+				<div class="gallery-item">
+					<img
+						src="/assets/pictures/2024_09_dhh_toronto.jpeg"
+						alt="DHH Toronto 2024"
+					/>
+					<p class="caption">
+						DHH (Rails Creator) at RailsWorld Toronto 2024
+					</p>
+				</div>
+
+				<div class="gallery-item">
+					<img
+						src="/assets/pictures/2024_05_bowling.jpg"
+						alt="Bowling May 2024"
+					/>
+					<p class="caption">Crim Searches Bowling May 2024</p>
+				</div>
+
+				<div class="gallery-item">
+					<img
+						src="/assets/pictures/le_club_2023_2.jpg"
+						alt="Le Club 2023"
+					/>
+					<p class="caption">Le Club 2023</p>
+				</div>
+
+				<div class="gallery-item">
+					<img
+						src="/assets/pictures/le_club_2023.jpg"
+						alt="Le Club 2023"
+					/>
+					<p class="caption">Le Club 2023</p>
+				</div>
+
+				<div class="gallery-item">
+					<img
+						src="/assets/pictures/2021_team_gelato.jpg"
+						alt="Team Gelato 2021"
+					/>
+					<p class="caption">Team Gelato 2021</p>
+				</div>
+
+				<div class="gallery-item">
+					<img
+						src="/assets/pictures/2021_denver_rubyconf_bear.png"
+						alt="Denver RubyConf 2021"
+					/>
+					<p class="caption">Denver RubyConf 2021</p>
+				</div>
+
+				<div class="gallery-item">
+					<img
+						src="/assets/pictures/2020_hackathon_team.jpg"
+						alt="Hackathon Team 2020"
+					/>
+					<p class="caption">Hackathon Team 2020</p>
+				</div>
+
+			<div class="gallery-item">
+				<img src="/assets/pictures/commute.jpg" alt="Commute" />
+				<p class="caption">Commute</p>
+			</div>
+
+				<div class="gallery-item">
+					<img
+						src="/assets/pictures/2019_iam.jpg"
+						alt="IAM team 2019"
+					/>
+					<p class="caption">IAM team 2019</p>
+				</div>
+			</div>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		gap: 2rem;
+		margin: 2rem 0;
+	}
+
+	.gallery-item {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.gallery-item img {
+		width: 100%;
+		height: 300px;
+		object-fit: cover;
+		border-radius: 8px;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+		transition: transform 0.2s ease;
+	}
+
+	.gallery-item img:hover {
+		transform: scale(1.02);
+	}
+
+	.caption {
+		font-size: 0.9rem;
+		color: #666;
+		text-align: center;
+		margin: 0;
+	}
+</style>
