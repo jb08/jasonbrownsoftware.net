@@ -1,5 +1,5 @@
 ---
-title: 'Building high signal-to-noise Monitors'
+title: 'Building high signal-to-noise monitors'
 description: ''
 pubDate: 2026-08-31
 ---
