@@ -26,13 +26,13 @@ Secondary goals are more debatable. This post will argue that these secondary go
 - **Monitors should be Actionable.** They should require specific, timely investigation and action. Monitors ping all hours of the day and all days of the week; working hours, at the grocery store, at the gym, dinnertime, and overnight. They need to be Actionable, otherwise we are teaching Engineers to disregard them. Maybe a criteria for a monitor should be, “Would you get out of bed for this?”
 - **Monitors should have a high signal-to-noise ratio.** An SNR measurement compares the level of a useful signal to the level of unwanted background noise. An SNR of 1:9 means that the unwanted background noise is 9 times stronger than the useful signal. An SNR of 4:0 means there is absolutely zero background noise, resulting in a theoretically perfect signal. The more background noise, the more akin monitors are to “The boy who cried wolf”.
 
-## The Problem
+## The problem
 
 At any given moment, most software companies have _hundreds_ of monitors in an actively firing state, including dozens in the P1-P3 categories. But not an ongoing incident. Why?
 
 
 
-### Monitor Ownership
+### Monitor ownership
 
 Most teams have 100-200 monitors. Half of those monitors were created by engineers no longer working on the team. When an on-call engineer receives a Page, they generally won’t feel empowered to change that monitor. They could start a slack thread about changing it, but they have many competing priorities, and they’re getting many pages per day.
 
