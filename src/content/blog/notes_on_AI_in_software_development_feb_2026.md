@@ -4,6 +4,10 @@ description: 'AI prediction of trending up / trending down'
 pubDate: 2026-02-02
 ---
 
+<div style="background: #fef3c7; border: 1px solid #f59e0b; border-radius: 8px; padding: 0.85em 1em; margin: 0 0 1.5em 0;">
+<strong>Note Aug 2026:</strong> Many of these predictions about AI aged like cheese.
+</div>
+
 With AI changing software development so rapidly, I thought I’d jot down my thoughts on it as of February 2026. Of course, with the pace of change, many of these ideas will be outdated, or so obvious they weren’t worth writing, in the not-too-distant future.
 
 I’m going to group the ideas into predictions of <span style="color: green;">trending up</span> / <span style="color: red;">trending down</span>.
