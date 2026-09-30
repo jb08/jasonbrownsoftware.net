@@ -4,9 +4,9 @@ description: ''
 pubDate: 2026-08-31
 ---
 
-Team A receives 50 Pages per week, or an average of 7 per day. Maybe five are during the workday, one after work, and one overnight. They have zero-to-one real incidents per week, of varying severity, for a signal-to-noise (“SNR”) of 1:50. Their monitoring noise is 50 times stronger than the signal (and in the case where they have zero real incidents, the noise is infinitely stronger than the signal).
+Team A's on-call engineer receives 50 Pages per week. They have zero-to-one real incidents per week, for a signal-to-noise ratio of 1:49.
 
-Team B receives 4 Pages per week, zero-to-one of which is deemed a real incident of varying priority. Their monitoring SNR is 1:3. Their monitoring noise is 3 times stronger than the signal.
+Team B's on-call engineer receives 4 Pages per week. They have zero-to-one real incidents per week, for a signal-to-noise ratio of 1:3.
 
 ***What are the goals of a monitoring system? Which team has a better monitoring system? And why are the vast majority of teams like team A?***
 
