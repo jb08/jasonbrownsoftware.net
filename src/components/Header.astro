@@ -36,6 +36,18 @@ import HeaderLink from './HeaderLink.astro';
 		</div>
 	</nav>
 </header>
+<script>
+	const links = document.querySelector<HTMLElement>('.internal-links');
+	if (links) {
+		const update = () => {
+			const atEnd = links.scrollLeft + links.clientWidth >= links.scrollWidth - 2;
+			links.classList.toggle('scrolled-end', atEnd);
+		};
+		links.addEventListener('scroll', update, { passive: true });
+		window.addEventListener('resize', update);
+		update();
+	}
+</script>
 <style>
 	header {
 		margin: 0;
@@ -101,6 +113,10 @@ import HeaderLink from './HeaderLink.astro';
 			white-space: nowrap;
 			scrollbar-width: none;
 			margin: 0 -0.5em;
+			mask-image: linear-gradient(to right, black calc(100% - 3em), transparent);
+		}
+		.internal-links.scrolled-end {
+			mask-image: none;
 		}
 		.internal-links::-webkit-scrollbar {
 			display: none;
